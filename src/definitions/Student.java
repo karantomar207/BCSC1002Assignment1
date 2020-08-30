@@ -37,5 +37,8 @@ public class Student {
         return namesOfBooksIssuedByStudent;
     }
 
+    public void setNamesOfBooksIssuedByStudent(Book[] namesOfBooksIssuedByStudent) {
+        this.namesOfBooksIssuedByStudent = namesOfBooksIssuedByStudent;
+    }
 
 }
