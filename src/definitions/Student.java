@@ -12,4 +12,8 @@ public class Student {
     private long studentUniversityRollNumber;
     private int numberOfBooksIssued;
     private Book[] namesOfBooksIssuedByStudent;
+
+    public Student() {
+
+    }
 }
