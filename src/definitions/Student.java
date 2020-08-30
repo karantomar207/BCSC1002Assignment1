@@ -124,4 +124,12 @@ public class Student {
                 Objects.equals(studentName, student.studentName) &&
                 Arrays.equals(namesOfBooksIssuedByStudent, student.namesOfBooksIssuedByStudent);
     }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(studentName, studentUniversityRollNumber, numberOfBooksIssued);
+        result = 31 * result + Arrays.hashCode(namesOfBooksIssuedByStudent);
+        return result;
+
+    }
 }
