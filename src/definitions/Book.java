@@ -7,11 +7,18 @@
 package definitions;
 
 public class Book {
-    private String bookNme;
+    private String bookName;
     private String bookAuthorName;
     private String isbnNumber;
 
     public Book() {
+        this.bookName = null;
+        this.bookAuthorName = null;
+        this.isbnNumber = null;
+
+    }
+
+    public Book(String bookName, String bookAuthorName, String isbnNumber) {
 
     }
 
