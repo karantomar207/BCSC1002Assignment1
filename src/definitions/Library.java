@@ -75,6 +75,14 @@ public class Library {
     }
 
     public void showAvailableBooks() {
+        System.out.println("**********************************************************************************");
+        System.out.printf("*%-36s %-21s %-21s*\n", "Book Name", "Author Name", "ISBN Number");
+        System.out.println("***********************************************************************************");
+        for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
+            System.out.printf("*%-36s %-21s %-21s*\n", availableBooks[libraryIndex].getBookName(), availableBooks[libraryIndex].getBookAuthorName(), availableBooks[libraryIndex].getIsbnNumber());
+        }
+        System.out.println("************************************************************************************");
+
 
     }
 }
