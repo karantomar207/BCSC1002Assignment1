@@ -132,4 +132,22 @@ public class Student {
         return result;
 
     }
+    /*
+      This method will issue the books to the student
+     * @param bookIssuingIndex The index where the book is issueing.
+     * @param bookName  The name of the book which is issuing.
+     */
+
+    public void showIssuedBooksByStudent() {
+        if (getNumberOfBooksIssued() == 0) {
+            System.out.println("Sorry, you haven't issued any book yet.");
+        } else {
+            System.out.println("These are the books issued by you: ");
+            for (int issuedBookIndex = 0; issuedBookIndex < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; issuedBookIndex++) {
+                if (namesOfBooksIssuedByStudent[issuedBookIndex].getBookName() != null) {
+                    System.out.print(namesOfBooksIssuedByStudent[issuedBookIndex].getBookName() + (issuedBookIndex < getNumberOfBooksIssued() - 1 ? ", " : ".\n"));
+                }
+            }
+        }
+    }
 }
