@@ -47,5 +47,9 @@ public class Book {
         return isbnNumber;
     }
 
+    public void setIsbnNumber(String isbnNumber) {
+
+    }
+
 }
 
