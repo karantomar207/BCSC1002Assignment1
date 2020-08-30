@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private static final int MAXIMUM_BOOKS_STUDENT_CAN_ISSUE = 5;
     private String studentName;
@@ -101,5 +103,13 @@ public class Student {
 
     public void setStudentUniversityRollNumber(long studentUniversityRollNumber) {
         this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "studentName='" + studentName + '\'' +
+                ",studentUniversityRollNumber=" + studentUniversityRollNumber +
+                ",numberOfBookIssued=" + numberOfBooksIssued +
+                ",namesOfbooksIssuedByStudent=" + Arrays.toString(namesOfBooksIssuedByStudent) + ".";
     }
 }
