@@ -6,14 +6,13 @@
  * */
 package definitions;
 
-import java.util.Objects;
-
 public class Book {
     private String bookNme;
     private String bookAuthorName;
     private String isbnNumber;
 
     public Book(){
+        this.bookNme = null;
 
 
     }
