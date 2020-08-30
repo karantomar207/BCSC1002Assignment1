@@ -19,6 +19,16 @@ public class Book {
     }
 
     public Book(String bookName, String bookAuthorName, String isbnNumber) {
+        this.bookName = bookName;
+        this.bookAuthorName = bookAuthorName;
+        this.isbnNumber = isbnNumber;
+
+
+    }
+
+    public String getBookName() {
+        return bookName;
+
 
     }
 
