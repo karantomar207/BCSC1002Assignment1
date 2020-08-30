@@ -52,6 +52,13 @@ public class Book {
 
     }
 
+    public String toString() {
+        return "Book Name" + getBookName() + "," +
+                "Authors Name" + getBookAuthorName() + "," +
+                "isbnNumber" + getIsbnNumber() + ".";
+
+    }
+
 
 }
 
