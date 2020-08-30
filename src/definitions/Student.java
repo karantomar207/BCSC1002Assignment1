@@ -14,6 +14,17 @@ public class Student {
     private Book[] namesOfBooksIssuedByStudent;
 
     public Student() {
+        this.studentName = "KARAN";
+        this.studentUniversityRollNumber = 191500383;
+        this.numberOfBooksIssued = 5;
+        this.namesOfBooksIssuedByStudent = new Book[MAXIMUM_BOOKS_STUDENT_CAN_ISSUE];
+        for (int i = 0; i < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; i++) {
+            namesOfBooksIssuedByStudent[i] = new Book();
 
+        }
+    }
+
+    public Book[] getNamesOfBooksIssuedByStudent() {
+        return namesOfBooksIssuedByStudent;
     }
 }
