@@ -37,4 +37,40 @@ public class Library {
     public String toString() {
         return "availableBooks=" + Arrays.toString(availableBooks) + ".";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Arrays.equals(availableBooks, library.availableBooks);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(availableBooks);
+    }
+
+
+    //This method is used to show all information of books in Library.
+
+    public void setBooksInLibrary() {
+        availableBooks[0].setBookName("A Brief History Of Time");
+        availableBooks[0].setBookAuthorName("Stephen Hawking");
+        availableBooks[0].setIsbnNumber("68274677367464");
+        availableBooks[1].setBookName("Relativity:The special Theory");
+        availableBooks[1].setBookAuthorName("Elbert Einstein");
+        availableBooks[1].setIsbnNumber("4684212446562");
+        availableBooks[2].setBookName("Go like Hell");
+        availableBooks[2].setBookAuthorName("A.J.Baime");
+        availableBooks[2].setIsbnNumber("97521645489");
+        availableBooks[3].setBookName("In The Heart Of The Sea");
+        availableBooks[3].setBookAuthorName("Natheniel  Philbrick");
+        availableBooks[3].setIsbnNumber("87812123966232");
+        availableBooks[4].setBookName("A Suitable Boy");
+        availableBooks[4].setBookAuthorName("Vikram Seth");
+        availableBooks[4].setIsbnNumber("8645126654548151");
+
+    }
 }
