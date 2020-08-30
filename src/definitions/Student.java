@@ -98,4 +98,8 @@ public class Student {
     public long getStudentUniversityRollNumber() {
         return studentUniversityRollNumber;
     }
+
+    public void setStudentUniversityRollNumber(long studentUniversityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
 }
