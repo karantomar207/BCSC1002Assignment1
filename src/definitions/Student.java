@@ -7,6 +7,7 @@
 package definitions;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
     private static final int MAXIMUM_BOOKS_STUDENT_CAN_ISSUE = 5;
@@ -111,5 +112,16 @@ public class Student {
                 ",studentUniversityRollNumber=" + studentUniversityRollNumber +
                 ",numberOfBookIssued=" + numberOfBooksIssued +
                 ",namesOfbooksIssuedByStudent=" + Arrays.toString(namesOfBooksIssuedByStudent) + ".";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return studentUniversityRollNumber == student.studentUniversityRollNumber &&
+                numberOfBooksIssued == student.numberOfBooksIssued &&
+                Objects.equals(studentName, student.studentName) &&
+                Arrays.equals(namesOfBooksIssuedByStudent, student.namesOfBooksIssuedByStudent);
     }
 }
