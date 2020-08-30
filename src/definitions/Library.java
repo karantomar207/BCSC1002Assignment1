@@ -11,6 +11,9 @@ public class Library {
     private Book[] availableBooks;
 
     public Library() {
-
+        this.availableBooks = new Book[MAXIMUM_BOOKS_IN_LIBRARY];
+        for (int i = 0; i < MAXIMUM_BOOKS_IN_LIBRARY; i++) {
+            availableBooks[i] = new Book();
+        }
     }
 }
