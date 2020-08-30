@@ -78,4 +78,13 @@ public class Student {
         return returnSuccessful;
     }
 
+    /*
+    This method will allow shoe names of all issued books.
+     */
+    public void listOfIssuedBooks() {
+        for (Book book : this.namesOfBooksIssuedByStudent) {
+            System.out.println(book);
+        }
+    }
+
 }
