@@ -32,4 +32,8 @@ public class Student {
         this.namesOfBooksIssuedByStudent = namesOfBooksIssuedByStudent;
 
     }
+
+    public Book[] getNamesOfBooksIssuedByStudent() {
+        return namesOfBooksIssuedByStudent;
+    }
 }
