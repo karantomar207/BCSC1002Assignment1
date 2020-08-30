@@ -18,4 +18,8 @@ public class Library {
         }
 
     }
+
+    public Library(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
 }
