@@ -73,4 +73,8 @@ public class Library {
         availableBooks[4].setIsbnNumber("8645126654548151");
 
     }
+
+    public void showAvailableBooks() {
+
+    }
 }
